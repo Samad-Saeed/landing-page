@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Ajdustech Home</title>
+</head>
+
+<body class="bg-gray-100 text-gray-900">
+    
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50 font-extrabold">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="text-2xl text-blue-600">Adjustech</div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#" class="text-gray-600 hover:text-blue-600">Home</a>
+                    <a href="#" class="text-gray-600 hover:text-blue-600">About</a>
+                    <a href="#" class="text-gray-600 hover:text-blue-600">Services</a>
+                    <a href="#" class="text-gray-600 hover:text-blue-600">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="nav-toggle" class="focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div id="nav-menu" class="hidden md:hidden">
+                <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200">Home</a>
+                <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200">About</a>
+                <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200">Services</a>
+                <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-600 via-blue-500 to-blue-100 text-white h-screen flex items-center justify-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-blue-700 to-black opacity-70 animate-gradient-x"></div>
+        <div class="relative z-10 text-center animate-fade-in">
+            <h1 class="text-5xl md:text-6xl font-bold opacity-0 animate-slide-down">Welcome to Our Landing Page</h1>
+            <p class="mt-4 text-lg md:text-xl opacity-0 animate-slide-up">Delivering high-quality solutions for your business</p>
+            <button class="mt-6 bg-white text-blue-600 font-bold py-3 px-6 rounded-full hover:bg-gray-200 transition transform hover:scale-105 opacity-0 animate-slide-up">
+                Get Started
+            </button>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6 animate-slide-down">Our Services</h2>
+            <dwiv class="grid grid-cols-1 md:grid-cols-3 gap-8 overflow-hidden animate-slide-up">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-4">Web Development  </h3>
+                    <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.v</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-4">Appp Development</h3>
+                    <p class="text-gray-600">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-4">Cloud Services</h3>
+                    <p class="text-gray-600">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- project Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6 animate-slide-down">Our projects</h2>
+            <dwiv class="grid grid-cols-1 md:grid-cols-3 gap-8 overflow-hidden animate-slide-up">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-4">facebook </h3>
+                    <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.v</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-4">Google</h3>
+                    <p class="text-gray-600">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-4">Insta</h3>
+                    <p class="text-gray-600">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2024 Adjustech. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Toggle Navbar Script -->
+    <script>
+        const navToggle = document.getElementById('nav-toggle');
+        const navMenu = document.getElementById('nav-menu');
+
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

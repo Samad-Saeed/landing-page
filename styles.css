@@ -1,0 +1,63 @@
+/* Fade-in animation */
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Slide-down animation */
+@keyframes slide-down {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Slide-up animation */
+@keyframes slide-up {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Background gradient animation */
+@keyframes gradient-x {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.animate-fade-in {
+    animation: fade-in 2s forwards;
+}
+
+.animate-slide-down {
+    animation: slide-down 2s forwards 0.5s;
+}
+
+.animate-slide-up {
+    animation: slide-up 2s forwards 0.7s;
+}
+
+.animate-gradient-x {
+    background-size: 200% 200%;
+    animation: gradient-x 5s ease infinite;
+}
